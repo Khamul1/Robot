@@ -7,8 +7,10 @@ public interface IRobot {
     void move();
     void  stop();
     void fight();
+    void talk();
 
     // методы-свойства
     String getName();
+
 
 }

@@ -2,9 +2,8 @@ package robot;
 
 import java.util.Stack;
 
-public class Terminator implements IRobot {
+public class Terminator extends ARobot {
 
-    private String name;
     @Override
     public void move() {
         System.out.println("terminator move");
@@ -23,7 +22,7 @@ public class Terminator implements IRobot {
     }
 
     @Override
-    public String getName() {
-        return name;
+    public void talk() {
+        System.out.println("terminator talk");
     }
 }

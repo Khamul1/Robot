@@ -6,7 +6,8 @@ public class Main {
         Robocop robocop = new Robocop();
         robocop.setName("robo");
         robocop.fight();
-        System.out.println(robocop.getName());
+        robocop.talk();
+
 
     }
 }

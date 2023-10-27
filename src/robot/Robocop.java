@@ -1,8 +1,6 @@
 package robot;
 
-public class Robocop implements IRobot{
-
-    private String name;
+public class Robocop extends ARobot{
 
     @Override
     public void move() {
@@ -19,12 +17,9 @@ public class Robocop implements IRobot{
         System.out.println("flight");
     }
 
-    @Override
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public void talk() {
+        System.out.println("robo talk");
     }
 }
