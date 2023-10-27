@@ -1,7 +1,10 @@
 package robot;
 
+import java.util.Stack;
+
 public class Terminator implements IRobot {
 
+    private String name;
     @Override
     public void move() {
         System.out.println("terminator move");
@@ -17,5 +20,10 @@ public class Terminator implements IRobot {
     public void fight() {
         System.out.println("terminator flight");
 
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }

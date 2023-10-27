@@ -3,10 +3,12 @@ package robot;
 //контракт для всех работа
 public interface IRobot {
 
-    // только описание поведение для всех работов
+    // методы-действия (методы бизнес-процессов)
     void move();
     void  stop();
     void fight();
 
-    String name = "asdsad";
+    // методы-свойства
+    String getName();
+
 }
