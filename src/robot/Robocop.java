@@ -2,6 +2,13 @@ package robot;
 
 public class Robocop extends ARobot{
 
+    public Robocop() {
+    }
+
+    public Robocop(String name) {
+        super(name);
+    }
+
     @Override
     public void move() {
         System.out.println("move");
