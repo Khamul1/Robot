@@ -7,8 +7,8 @@ public class Terminator extends ARobot {
     public Terminator() {
     }
 
-    public Terminator(String name) {
-        super(name);
+    public Terminator(String name, robot.IWing IWing) {
+        super(name, IWing);
     }
 
     @Override

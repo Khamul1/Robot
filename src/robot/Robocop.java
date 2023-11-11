@@ -5,8 +5,8 @@ public class Robocop extends ARobot{
     public Robocop() {
     }
 
-    public Robocop(String name) {
-        super(name);
+    public Robocop(String name, robot.IWing IWing) {
+        super(name, IWing);
     }
 
     @Override
@@ -21,7 +21,7 @@ public class Robocop extends ARobot{
 
     @Override
     public void fight() {
-        System.out.println("flight");
+        System.out.println("Robocop flight with wing size = " + getIWing().getSize());
     }
 
 

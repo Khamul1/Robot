@@ -1,2 +1,8 @@
-package robot;public interface IWing {
+package robot;
+
+public interface IWing {
+
+    void open();
+
+    int getSize();
 }

@@ -11,6 +11,7 @@ public interface IRobot {
 
     // методы-свойства
     String getName();
+    IWing getIWing();
 
 
 }

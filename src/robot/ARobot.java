@@ -4,16 +4,15 @@ public abstract class ARobot implements IRobot {
 
     public ARobot() {
     }
-    // можем выносить в абстрактный класс часть реализации интерфейса
 
-
-    public ARobot(String name, Wing wing) {
+    public ARobot(String name, robot.IWing IWing) {
         this.name = name;
-        this.wing = wing;
+        this.IWing = IWing;
     }
-
+    // можем выносить в абстрактный класс часть реализации интерфейса
     private String name;
-    private Wing wing;
+    private IWing IWing;
+
 
     @Override
     public String getName() {
@@ -25,15 +24,11 @@ public abstract class ARobot implements IRobot {
     }
 
     @Override
-    public void talk(){
+    public robot.IWing getIWing() {
+        return IWing;
     }
 
-    @Override
-    public Wing getWing() {
-        return wing;
-    }
-
-    public void setWing(Wing wing) {
-        this.wing = wing;
+    public void setIWing(robot.IWing IWing) {
+        this.IWing = IWing;
     }
 }

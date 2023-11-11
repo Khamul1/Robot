@@ -3,7 +3,13 @@ package robot;
 public class Main {
     public static void main(String[] args) {
 
-        Robocop robocop = new Robocop("robocop");
+        AircraftWing aircraftWing = new AircraftWing();
+        aircraftWing.setSize(200);
+        aircraftWing.open();
+
+        Robocop robocop = new Robocop();
+        robocop.setName("robo");
+        robocop.setIWing(aircraftWing);
 
         robocop.fight();
         robocop.talk();
