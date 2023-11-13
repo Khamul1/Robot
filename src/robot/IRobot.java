@@ -1,7 +1,7 @@
 package robot;
 
 //контракт для всех работа
-public interface IRobot {
+public interface IRobot extends ITechnics {
 
     // методы-действия (методы бизнес-процессов)
     void move();

@@ -1,4 +1,8 @@
 package robot;
 
-public interface ITechnic {
+public interface ITechnics {
+
+    void on();
+
+    void off();
 }

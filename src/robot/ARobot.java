@@ -31,4 +31,15 @@ public abstract class ARobot implements IRobot {
     public void setIWing(robot.IWing IWing) {
         this.IWing = IWing;
     }
+
+    @Override
+    public void on() {
+        System.out.println("on");
+    }
+
+    @Override
+    public void off() {
+        System.out.println("off");
+    }
+
 }

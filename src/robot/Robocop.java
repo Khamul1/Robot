@@ -29,4 +29,9 @@ public class Robocop extends ARobot{
     public void talk() {
         System.out.println("robo talk");
     }
+
+    @Override
+    public void on() {
+        System.out.println("on with beep");
+    }
 }
