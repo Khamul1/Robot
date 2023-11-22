@@ -11,7 +11,7 @@ public class Robocop extends ARobot{
 
     @Override
     public void move() {
-        System.out.println("move");
+        System.out.println("Robocop move");
     }
 
     @Override

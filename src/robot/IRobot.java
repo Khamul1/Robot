@@ -1,10 +1,13 @@
 package robot;
 
 //контракт для всех работа
-public interface IRobot extends ITechnics {
+public interface IRobot{
 
     // методы-действия (методы бизнес-процессов)
-    void move();
+    default void move(){
+        System.out.println("default move " + getName());
+    }
+
     void  stop();
     void fight();
     void talk();

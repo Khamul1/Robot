@@ -2,7 +2,12 @@ package robot;
 
 public interface ITechnics {
 
-    void on();
+    default  void on(){
+        System.out.println("default on");
+    }
 
-    void off();
+    default  void off(){
+        System.out.println("default off");
+        on();
+    }
 }

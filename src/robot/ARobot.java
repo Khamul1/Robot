@@ -1,6 +1,6 @@
 package robot;
 
-public abstract class ARobot implements IRobot {
+public abstract class ARobot implements IRobot, ITechnics {
 
     public ARobot() {
     }
@@ -37,9 +37,9 @@ public abstract class ARobot implements IRobot {
         System.out.println("on");
     }
 
-    @Override
-    public void off() {
-        System.out.println("off");
-    }
+//    @Override
+//    public void off() {
+//        System.out.println("off");
+//    }
 
 }

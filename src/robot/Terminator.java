@@ -11,10 +11,10 @@ public class Terminator extends ARobot {
         super(name, IWing);
     }
 
-    @Override
-    public void move() {
-        System.out.println("terminator move");
-    }
+//    @Override
+//    public void move() {
+//        System.out.println("terminator move");
+//    }
 
     @Override
     public void stop() {

@@ -11,9 +11,11 @@ public class Main {
         robocop.setName("robo");
         robocop.setIWing(aircraftWing);
 
-        robocop.fight();
-        robocop.talk();
+//        robocop.fight();
+//        robocop.talk();
+//        robocop.move();
 
+        robocop.off();
 
     }
 }
