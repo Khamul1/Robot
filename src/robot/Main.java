@@ -5,17 +5,14 @@ public class Main {
 
         AircraftWing aircraftWing = new AircraftWing();
         aircraftWing.setSize(200);
-        aircraftWing.open();
+
+        LittleWing littleWing = new LittleWing();
+        aircraftWing.setSize(10);
 
         Robocop robocop = new Robocop();
         robocop.setName("robo");
-        robocop.setIWing(aircraftWing);
+        robocop.setIWing(littleWing);
 
-//        robocop.fight();
-//        robocop.talk();
-//        robocop.move();
-
-        robocop.off();
-
+        robocop.fight();
     }
 }

@@ -10,8 +10,8 @@ public abstract class ARobot implements IRobot, ITechnics {
         this.IWing = IWing;
     }
     // можем выносить в абстрактный класс часть реализации интерфейса
-    private String name;
-    private IWing IWing;
+    private String name; // эту переменную создали согласно интерфейсу
+    private IWing IWing; // универсальная ссылка
 
 
     @Override
