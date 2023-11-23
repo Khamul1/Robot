@@ -3,10 +3,15 @@ package robot;
 public class Main {
     public static void main(String[] args) {
 
-       Robocop robocop1 = new Robocop();
-       robocop1.takeGun();
+        IRobot robocop = new Robocop();
 
-       IRobot robocop2 = new Robocop();
-       robocop2.talk();
+        ((Robocop)robocop).takeGun(); // 1-й вариант приведения без присвоения в переенную
+
+        Robocop robocopTrue = (Robocop)robocop; // 2-й вариант приведения с присвоением в переменную
+        robocopTrue.takeGun();
+
+
+
+
     }
 }
