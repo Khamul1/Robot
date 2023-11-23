@@ -5,10 +5,9 @@ public class Main {
 
         IRobot robocop = new Robocop();
 
-        ((Robocop)robocop).takeGun(); // 1-й вариант приведения без присвоения в переенную
+        ((Robocop)robocop).takeGun(10, "hi"); // 1-й вариант приведения без присвоения в переменную
 
-        Robocop robocopTrue = (Robocop)robocop; // 2-й вариант приведения с присвоением в переменную
-        robocopTrue.takeGun();
+
 
 
 

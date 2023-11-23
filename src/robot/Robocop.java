@@ -39,4 +39,12 @@ public class Robocop extends ARobot{
     public void takeGun(){
         System.out.println("robocop take gun");
     }
+
+    public void takeGun(int sec){
+        System.out.println("robocop take gun in "+ sec+ "sec");
+    }
+
+    public void takeGun(int sec, String speech){
+        System.out.println("robocop take gun in " + sec + " sec with speech="+ speech);
+    }
 }
