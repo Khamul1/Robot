@@ -3,16 +3,10 @@ package robot;
 public class Main {
     public static void main(String[] args) {
 
-        AircraftWing aircraftWing = new AircraftWing();
-        aircraftWing.setSize(200);
+       Robocop robocop1 = new Robocop();
+       robocop1.takeGun();
 
-        LittleWing littleWing = new LittleWing();
-        aircraftWing.setSize(10);
-
-        Robocop robocop = new Robocop();
-        robocop.setName("robo");
-        robocop.setIWing(littleWing);
-
-        robocop.fight();
+       IRobot robocop2 = new Robocop();
+       robocop2.talk();
     }
 }

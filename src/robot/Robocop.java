@@ -35,4 +35,8 @@ public class Robocop extends ARobot{
     public void on() {
         System.out.println("on with beep");
     }
+    // этот метод не описан в интерфейсе
+    public void takeGun(){
+        System.out.println("robocop take gun");
+    }
 }
